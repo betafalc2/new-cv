@@ -75,6 +75,7 @@
 @media (max-width: 480px) {
     .homepage{
         display: block;
+        margin-bottom: 80px;
     }
     .Homegrid-container {
         grid-template-columns: repeat(1, 100%); /* Single column for narrow screens */
@@ -101,6 +102,7 @@
 
     .homepage{
         display: block;
+        margin-bottom: 80px;
     }
     .Homegrid-container {
         grid-template-columns: 1fr; /* Single column */

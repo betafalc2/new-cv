@@ -22,6 +22,7 @@ const Feedback = () => {
   };
 
   return (
+    <div className={styles.feedbackmainContainer}>
     <div className={styles.feedbackContainer}>
       <div className={styles.formHeader}>
         <h1 className={styles.formTitle}>Feedback Form</h1>
@@ -109,6 +110,7 @@ const Feedback = () => {
           </div>
         </form>
       </div>
+    </div>
     </div>
   );
 };

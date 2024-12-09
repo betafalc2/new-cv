@@ -4,7 +4,7 @@ import styles from './ToDo.module.css';
 const Search = ({ search, setSearch }) => {
   return (
     <div className={styles.Tosearch}>
-      <h2>Search:</h2>
+      <h2>Search</h2>
       <input
         type="text"
         value={search}

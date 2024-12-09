@@ -15,7 +15,7 @@ const TodoForm = ({ addTodo }) => {
 
   return (
     <div>
-      <h2 className={styles['Totodo-form']}>Create Task:</h2>
+      <h2 className={styles['Totodo-form']}>Create Task</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"

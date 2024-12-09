@@ -4,11 +4,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: #333;
+    color: #555;
 }
 
 p {
-    color: #333;
+    color: #555
 }
 
 body {
@@ -33,7 +33,7 @@ body {
 .Reviewform-container {
     max-width: 600px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: #d8e2dc;
     padding: 1.5rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     border-radius: 10px;
@@ -60,7 +60,7 @@ body {
 .Reviewform-control label {
     width: 100px; 
     font-weight: bold;
-    color: #333;
+    color: #555;
     font-size: 0.9rem;
     line-height: 1.5; 
     -webkit-appearance: none;
@@ -106,11 +106,11 @@ textarea {
     gap: 0.5rem;
     align-items: center;
     border-radius: 3px;
-    background-color: #f3f0f0;
+    background-color: #b1c7ba;
     cursor: pointer;
     border: none;
     transition: 0.3s;
-    color: #333;
+    color: #555;
 }
 
 
@@ -143,7 +143,7 @@ textarea {
 
 .Reviewstep {
     text-align: center;
-    background-color: #fff;
+    background-color: #d8e2dc;
     z-index: 1;
     width: 120px;
     padding: 0.5rem;

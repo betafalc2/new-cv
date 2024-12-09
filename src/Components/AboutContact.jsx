@@ -29,7 +29,7 @@ const AboutContact = () => {
       <div className={styles.bentoContainer}>
         <div className={styles.box1}>
           <h1 className={styles.abnametitle} >
-            Roberta Trombetta Full-Stack Web Developer based in Bremen, germany
+            Roberta Trombetta <br /> Full-Stack Web Developer based in Bremen, Germany
           </h1>
           <ul className={styles.abul}>
             <li className={styles.abcontactlist}>

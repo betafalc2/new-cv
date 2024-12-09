@@ -1,28 +1,15 @@
-* {
-  font-family: "Barlow", sans-serif;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  color: #333;
-}
-
-p {
-  color: #333;
-}
-
-body {
-  background-color: #fff;
+.feedbackmainContainer{
+  margin-bottom: 100px;
 }
 
 .feedbackContainer {
-  max-width: 600px;
+  max-width: 40vw;
   margin: 0 auto;
   background-color: #fff;
-  padding: 1.5rem;
+  padding: 01rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 15px;
-  background-color: #fcf1d7;
-  margin-bottom: 100px;
+  background-color: #fce9e1;
 }
 
 .formHeader {
@@ -38,25 +25,25 @@ body {
 /* Form container styles */
 .formContainer {
   max-width: 600px;
-  margin: 2rem auto;
   background-color: #fff;
   padding: 1.5rem;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
   text-align: center;
+  background-color:#fac6b0;
 }
 
 .formTitle {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #5abac9;
 }
 
 .formSubtitle {
   font-size: 1rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  color: #a5a2a2;
+  color: #707070;
+  text-align: center;
 }
 
 /* Input container */
@@ -71,14 +58,13 @@ body {
   align-items: center;
   justify-content: flex-start;
   margin-bottom: 1rem;
-  gap: 5rem;
 }
 
 .formLabel {
   flex: 0 0 auto;
   width: 100px;
   color: #706f6f;
-  line-height: 1;
+  
   font-weight: bold;
   margin-bottom: 0.5rem;
   font-size: 1rem;
@@ -90,7 +76,7 @@ body {
   padding: 0.6rem;
   border: none;
   border-radius: 3px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px;
   line-height: 1;
 }
 
@@ -112,12 +98,13 @@ body {
 .buttonForm {
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
-  border-radius: 3px;
-  background-color: #d9f1f2;
+  border-radius: 5px;
+  background-color: #ffdfc8;
   cursor: pointer;
   border: none;
   transition: 0.3s;
-  color: #333;
+  color: #555;
+  box-shadow: rgba(99, 99, 99, 0.3) 0px 2px 8px 0px
 }
 
 .buttonForm:hover {
@@ -125,12 +112,14 @@ body {
 }
 
 @media (max-width: 480px) {
-  /* Container adjustments */
+
+  .feedbackmainContainer{
+    margin-bottom: 100px;
+  }
+ 
   .feedbackContainer, .formContainer {
-    max-width: 100%; /* Ensure containers take full width on mobile */
+    max-width: 90vw; /* Ensure containers take full width on mobile */
     padding: 1rem; /* Reduce padding */
-    margin: 0 10px; /* Add margin for spacing */
-    margin-bottom: 50px;
     overflow: hidden; /* Prevent any overflow issues */
   }
 
@@ -196,5 +185,8 @@ body {
     width: 100%; /* Make the button full width */
     padding: 1rem; /* Increase padding for better touch interaction */
     font-size: 1.2rem; /* Adjust font size */
+  }
+  .formGroup {
+    text-align: center;
   }
 }

@@ -7,12 +7,12 @@
   align-items: center;
   justify-content: center;
   margin-right: 5px; 
-  background-color: #1fc4e9; 
+  background-color: #c0dbcb; 
   color: #fff;
   border: none;
   border-radius: 3px; 
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
   transition: 0.3s;
   
 }
@@ -23,17 +23,14 @@
 
 .Tobutton[type="submit"] {
   
-  height: 40px; /* Same as width for square */
-  padding: 10; /* Remove padding to maintain square shape */
-  display: inline-flexbox;
-  align-items: self-end;
-  justify-content: center;
-  background-color: #f4d10b; /* Your existing color */
+  height: 40px; /* Remove padding to maintain square shape */
+  padding: 5px;
+  background-color: #ecdc82; /* Your existing color */
   color: #fff;
   border: none;
   border-radius: 3px; /* Set to 0 for sharp edges */
   cursor: pointer;
-  opacity: 0.8;
+  opacity: 1;
   transition: 0.3s;
   margin-left: 20px;
 }
@@ -60,7 +57,7 @@
 
 .Toinput[type="text"],
 .Toselect {
-  width: 100%; /* Make them full width */
+ 
   height: 40px; /* Ensure consistent height */
   padding: 5px; /* Add padding for text visibility */
   margin-bottom: 10px; /* Keep space between form elements */
@@ -100,12 +97,12 @@
 }
 
 .TotodoApp {
-  max-width: 600px;
+  max-width: 60vw;
   margin: 0 auto 100px;
   background-color: #fff;
   padding: 20px 30px;
   border-radius: 10px;
-  background-color: #f4f4f4;
+  background-color: #ffdfc8;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -196,4 +193,9 @@
   margin-right: 10px; /* Add some space between the text and buttons */
 }
 
+@media (max-width: 480px) {
+  .TotodoApp {
+    max-width: 90vw;
+  }
+}
 
