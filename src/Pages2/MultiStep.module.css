@@ -1,0 +1,257 @@
+
+* {
+    font-family: "Barlow", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+p {
+    color: #333;
+}
+
+body {
+    background-color: #fff;
+}
+
+.ReviewApp {
+    padding: 2rem;
+    margin-bottom: 100px;
+}
+
+.ReviewHeader {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ReviewHeader h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.Reviewform-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1.5rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+}
+
+.form-container form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.ReviewInputs-container {
+    min-height: 28px;
+}
+
+
+.Reviewform-control {
+    display:flex ;
+    flex-direction: row; 
+    align-items: baseline; 
+    gap: 1rem; 
+    margin-bottom: 1rem;
+}
+
+.Reviewform-control label {
+    width: 100px; 
+    font-weight: bold;
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.5; 
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.Reviewinput,
+.Reviewtext {
+    padding: 0.6rem;
+    border: none;
+    border-radius: 3px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex-grow: 1; 
+    line-height: 1.5; 
+    margin-bottom: 2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="text"],
+select {
+  border: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+textarea {
+    height: 120px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.ReviewActions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem; 
+}
+
+.ReviewActions button {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    border-radius: 3px;
+    background-color: #f3f0f0;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s;
+    color: #333;
+}
+
+
+.ReviewActions button:hover {
+    background-color: #cfcfcf;
+}
+
+.Reviewactive {
+    background-color: red;
+}
+
+.Reviewsteps {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.Reviewsteps::after {
+    content: "";
+    width: 380px;
+    border-bottom: 1px solid #ccc;
+    position: absolute;
+    top: 20px;
+}
+
+.Reviewstep {
+    text-align: center;
+    background-color: #fff;
+    z-index: 1;
+    width: 120px;
+    padding: 0.5rem;
+}
+
+.Reviewstep svg {
+    font-size: 1.6rem;
+    margin-bottom: 0.2rem;
+}
+
+.Reviewactive {
+    font-weight: bold;
+}
+
+.Reviewactive > svg {
+    fill: #7076f4;
+}
+
+.Reviewscore-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.Reviewscore-container svg {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Reviewscore-container svg:hover {
+    fill: #7076f4;
+}
+
+.Reviewscore-container input:checked ~ svg {
+    fill: #7076f4;
+}
+
+.Reviewradio-container {
+    text-align: center;
+    position: relative;
+}
+
+.Reviewradio-container input {
+    opacity: 0;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+}
+
+.Reviewradio-container p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 0.7rem;
+    margin-top: 0.4rem;
+}
+
+.Reviewthanks-container {
+    text-align: center;
+}
+
+.Reviewthanks-container h2 {
+    margin-bottom: 1rem;
+}
+
+.Reviewthanks-container p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
+}
+
+.Reviewthanks-container h3 {
+    margin: 1rem 0;
+}
+
+.review-data {
+    text-align: left;
+}
+
+.review-data svg {
+    margin-left: 5px;
+}
+
+.review-data span {
+    font-weight: bold;
+}
+
+@media (max-width: 480px) {
+    .Reviewsteps{
+        gap: 0;
+    }
+    .Reviewsteps::after {
+    max-width: 80px
+    
+    }
+
+    .Reviewinput{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .Reviewtext textarea{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+
+    .textarea{
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}

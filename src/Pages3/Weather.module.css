@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.6;
+}
+
+.Wecontainer {
+  max-width: 1000px;
+  padding: 20px;
+  margin: 0 auto 100px;
+  text-align: center;
+  background-color: rgb(223, 223, 210);
+  border-radius: 10px;
+}
+
+.Weh1 {
+  font-size: 3rem;
+  color: rgb(39, 123, 197);
+}
+
+.Weinput {
+  padding: 10px;
+  border-radius: 20px 0 0 20px;
+  border: none;
+  max-width: 300px;
+  width: 60%;
+  outline: none;
+  margin-top: 30px;
+}
+
+.Webutton {
+  background-color: #ff9800;
+  border: 0;
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+}
+
+.Webutton:hover {
+  background-color: #f57c00;
+}
+
+.Weweather-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.Weh2 {
+  font-size: 2rem;
+}
+
+.Weweather-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100px;
+  }
+}
+
+.Wetemperature {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.Wedescription {
+  text-transform: capitalize;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.Wedetails {
+  display: flex;
+  justify-content: space-around;
+}
+
+.Weforecast-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+
+  .Weh3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+}
+
+.Weweather-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Weweather-item {
+  text-align: center;
+  background-color: rgb(215, 233, 238);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.Weforecast-day,
+.Weforecast-description {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+  .Weforecast-container {
+    width: 100%; /* Full width */
+    padding: 10px; /* Adjust padding */
+    margin: 10px 0; /* Margin for spacing */
+    display: block; /* Stack containers vertically */
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    height: auto; /* Let the height adjust based on content */
+  }
+
+  .Weweather-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically in a column */
+    gap: 10px; /* Add space between items */
+  }
+
+  .Weweather-item {
+    width: 100%; /* Full width for each item */
+    text-align: center;
+    background-color: rgb(215, 233, 238);
+    border-radius: 10px;
+    padding: 10px;
+  }
+}
